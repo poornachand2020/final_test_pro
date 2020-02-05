@@ -1,0 +1,4 @@
+{%  include 'adminpages/adminhome.html' %}
+{% for x in data %}
+    <a href="/adminpage/usersdetails1/?idno={{ x.username }}" >{{ x.username }}<br></a>
+{% endfor %}

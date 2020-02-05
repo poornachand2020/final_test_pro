@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'user/header.css' %}">
+    <style>
+        body{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+<header>Welcome  To Task Management </header>
+<nav>
+    <a href="/adminpage/adminhome/">Home</a>
+    <a href="/adminpage/usersdetails/">Users</a>
+        <a href="#">About</a>
+    <a href="#">logout</a>
+</nav>
+
+</body>
+</html>

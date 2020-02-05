@@ -1,0 +1,33 @@
+table{
+    margin-top: 10px;
+    border: 1px solid darkgreen;
+    align-items: center;
+}
+#register{
+    margin-top: 20px;
+
+}
+input{
+        font-size: 15px;
+
+}
+button{
+    box-shadow: 0 0 5px red ;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 25px;
+    color: white;
+    text-decoration:none;
+    background-color: teal;
+}
+button:hover{
+
+    box-shadow: 0 0 5px red ;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 25px;
+    color: black;
+    text-decoration:none;
+    background-color: hotpink;
+
+}

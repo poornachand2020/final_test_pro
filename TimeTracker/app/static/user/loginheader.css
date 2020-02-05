@@ -1,0 +1,66 @@
+nav{
+    padding: 10px;
+    border-radius: 15px ;
+    box-shadow: 0 0 15px red;
+
+}
+nav a:hover{
+
+    box-shadow: 0 0 5px red ;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 25px;
+    color: black;
+    text-decoration:none;
+    background-color: hotpink;
+
+}
+nav a{
+    box-shadow: 0 0 5px red ;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 25px;
+    color: white;
+    text-decoration:none;
+    background-color: teal;
+
+}
+header{
+    text-align: center;
+    padding: 20px;
+    font-family: "Comic Sans MS",sans-serif ;
+    font-size: 40px;
+    background-image: url('flower-1283602_1920.jpg');
+}
+table{
+    margin-top: 20px;
+    border: 1px solid darkgreen;
+    align-items: center;
+}
+#register{
+    margin-top: 20px;
+}
+input{
+        font-size: 25px;
+
+}
+button{
+    box-shadow: 0 0 5px red ;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 25px;
+    color: white;
+    text-decoration:none;
+    background-color: teal;
+}
+button:hover{
+
+    box-shadow: 0 0 5px red ;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 25px;
+    color: black;
+    text-decoration:none;
+    background-color: hotpink;
+
+}

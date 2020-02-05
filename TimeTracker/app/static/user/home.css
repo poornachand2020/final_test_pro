@@ -1,0 +1,27 @@
+body{
+    color: black;
+    background-image: url("time.jpg");
+      background-position: right top;
+      background-attachment: scroll;
+
+
+    margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+    color: green;
+    background-color: lightskyblue;
+}
+header{
+    border: solid red 5px;
+    padding: 20px;
+    font-family: "Comic Sans MS",sans-serif ;
+    font-size: 30px;
+        background-image: url("http://i.stack.imgur.com/jGlzr.png");
+
+
+
+
+}
+}

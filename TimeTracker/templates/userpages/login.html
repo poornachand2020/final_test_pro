@@ -1,0 +1,72 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link rel="stylesheet" href="{% static 'user/register.css' %}">
+
+</head>
+<body>
+{% include 'main/header.html' %}
+
+<div id="register">
+<form action="/user/loginvalidation/" method="post">
+    {% csrf_token %}
+    <br><br><br><br>
+    <table>
+        <tr>
+            <th><img src="{% static 'user/login.png' %}" width="250" height="250"></th>
+            <th>
+                <table id="maintable">
+                                    <tr><th>User Login</th></tr>
+
+
+             <tr><th><input type="email" name="username" placeholder="User Name"></th></tr>
+             <tr><th><input type="password" name="password" placeholder="Password"></th></tr>
+             <tr><th><button type="submit">login</button></th></tr>
+
+    </table>
+
+            </th>
+        </tr>
+    </table>
+
+    </form>
+</div>
+<div id="register">
+<form action="/adminpage/adminlogin/" method="post">
+    {% csrf_token %}
+    <br><br><br><br>
+    <table>
+
+        <tr>
+            <th><img src="{% static 'user/login.png' %}" width="250" height="250"></th>
+            <th>
+
+                <table id="maintable">
+                                    <tr><th>Admin Login</th></tr>
+
+
+             <tr><th><input type="email" name="username" placeholder="User Name"></th></tr>
+             <tr><th><input type="password" name="password" placeholder="Password"></th></tr>
+             <tr><th><button type="submit">login</button></th></tr>
+
+    </table>
+
+            </th>
+        </tr>
+    </table>
+
+    </form>
+</div>
+{% if messages %}
+    {% for x in messages %}
+    <h3>{{ x }}</h3>
+    {% endfor %}
+{% endif %}
+
+
+</body>
+</html>

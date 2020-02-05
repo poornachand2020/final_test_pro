@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%  include 'adminpages/adminhome.html' %}
+
+
+           {% if data %}
+            <table  id="table2" border="2" >
+
+                <thead>
+                <tr>
+                    <td width="100" >Task Id</td>
+                    <td width="150">Task Dateted</td>
+                    <td width="150">Task Name</td>
+                    <td width="150">Task Desc</td>
+                    <td width="150">Task Start Time</td>
+                    <td width="180">Task Close Time</td>
+                    <td width="150">Task Duration</td>
+                </tr>
+                </thead>
+                <tbody id="tbody_data">
+                <tr>
+                    <td width="100" >Task Id</td>
+                    <td width="150">Task Dateted</td>
+                    <td width="150">Task Name</td>
+                    <td width="150">Task Desc</td>
+                    <td width="150">Task Start Time</td>
+                    <td width="150">Task Close Time</td>
+                    <td width="150">Task Duration</td>
+                </tr>
+                    {% for x in data %}
+                    <tr>
+                    <td width="100">{{ x.task_id }}</td>
+                        <td width="150">{{ x.task_date }}</td>
+                    <td width="150">{{ x.taskhead }}</td>
+                    <td width="150" height="100">{{ x.taskdesc }}</td>
+                    <td width="150">{{ x.starttime }}</td>
+                    <td width="150"><a style="text-decoration: none" href="/user/closetime/?idno={{ x.task_id }}">{{ x.closetime }}</a></td>
+                    <td width="150">
+                        <script>
+                            var   old_time = '{{ x.starttime }}';
+                            var  time_now='{{ x.closetime }}';
+
+                            document.write(old_time+
+                                ' To '
+                                +time_now)
+                        </script>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+            </table>
+        {% endif %}
+
+    </table>
+
+</body>
+</html>
